@@ -5,4 +5,7 @@
 //  Created by amy on 2024-11-24.
 //
 
-let number_decimal = 0
+enum Constant {
+    static let numberOfDecimal = 0
+}
+

@@ -12,7 +12,7 @@ struct CityTemparatureView: View {
     var cityTemparature: Double
     
     var body: some View {
-        Text("\(cityTemparature, specifier: "%.\(number_decimal)f")°")
+        Text("\(cityTemparature, specifier: "%.\(Constant.numberOfDecimal)f")°")
             .customFont(.title2)
     }
 }

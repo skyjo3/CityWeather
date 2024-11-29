@@ -20,7 +20,7 @@ struct SearchPreviewListItem: View {
                     Text(cityWeather.cityName)
                         .customFont(.title3)
                         .scaledToFit()
-                    Text("\(cityWeather.temp_c, specifier: "%.\(number_decimal)f")°")
+                    Text("\(cityWeather.temp_c, specifier: "%.\(Constant.numberOfDecimal)f")°")
                         .customFont(.body)
                         .scaledToFit()
                 }

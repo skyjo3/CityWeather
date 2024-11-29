@@ -18,13 +18,13 @@ struct WeatherDetailsView: View {
             Color(CustomColor.lightGray.color)
             HStack(spacing: 40) {
                 WeatherDetailView(title: "Humidity",
-                                  info: String(format: "%.\(number_decimal)f", humidity)+"%")
+                                  info: String(format: "%.\(Constant.numberOfDecimal)f", humidity)+"%")
                 
                 WeatherDetailView(title: "UV",
-                                  info: String(format: "%.\(number_decimal)f", uv))
+                                  info: String(format: "%.\(Constant.numberOfDecimal)f", uv))
                 
                 WeatherDetailView(title: "Feels Like",
-                                  info: String(format: "%.\(number_decimal)f°", temparature))
+                                  info: String(format: "%.\(Constant.numberOfDecimal)f°", temparature))
             }
             .padding(30)
         }
