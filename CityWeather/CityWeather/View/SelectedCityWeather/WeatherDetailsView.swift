@@ -15,7 +15,7 @@ struct WeatherDetailsView: View {
     
     var body: some View {
         ZStack {
-            Color(Color(hex: weather_details_bg_hex))
+            Color(CustomColor.lightGray.color)
             HStack(spacing: 40) {
                 WeatherDetailView(title: "Humidity",
                                   info: String(format: "%.\(number_decimal)f", humidity)+"%")

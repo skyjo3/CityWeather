@@ -16,10 +16,10 @@ struct WeatherDetailView: View {
         VStack {
             Text(title)
                 .customFont(.caption)
-                .foregroundStyle(Color(hex: weather_detail_title_hex))
+                .foregroundStyle(CustomColor.gray.color)
             Text(info)
                 .customFont(.caption2)
-                .foregroundStyle(Color(hex: weather_detail_info_hex))
+                .foregroundStyle(CustomColor.darkGray.color)
         }
     }
 }

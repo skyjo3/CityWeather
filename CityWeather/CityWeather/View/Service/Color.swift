@@ -6,6 +6,16 @@
 //
 import SwiftUI
 
+enum CustomColor: String {
+    case lightGray = "#F2F2F2"
+    case gray = "#C4C4C4"
+    case darkGray = "#9A9A9A"
+
+    var color: Color {
+        return Color(hex: self.rawValue)
+    }
+}
+
 extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

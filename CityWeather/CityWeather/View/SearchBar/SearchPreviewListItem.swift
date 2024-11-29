@@ -14,7 +14,7 @@ struct SearchPreviewListItem: View {
     
     var body: some View {
         ZStack {
-            Color(Color(hex: preview_list_bg_hex))
+            Color(CustomColor.lightGray.color)
             HStack(alignment: .center) {
                 VStack(alignment: .leading, spacing: 0) {
                     Text(cityWeather.cityName)
