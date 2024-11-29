@@ -28,7 +28,7 @@ struct SearchPreviewListItem: View {
                 WebImage(url: URL(string: "https:\(cityWeather.img_url)")) { image in
                     image.resizable()
                 } placeholder: {
-                    Image(systemName: placeholder_img_name)
+                    SystemIcon.placeholder.image
                 }
                     .renderingMode(.original)
                     .resizable()

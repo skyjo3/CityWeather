@@ -16,7 +16,7 @@ struct WeatherImageView: View {
         WebImage(url: URL(string: "https:\(imageName)")) { image in
             image.resizable()
         } placeholder: {
-            Image(systemName: placeholder_img_name)
+            SystemIcon.placeholder.image
         }
             .renderingMode(.original)
             .resizable()

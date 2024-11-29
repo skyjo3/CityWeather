@@ -15,7 +15,7 @@ struct CityTextView: View {
         HStack {
             Text(cityName)
                 .customFont(.title)
-            Image(systemName: city_text_icon_name)
+            SystemIcon.location.image
         }
     }
 }

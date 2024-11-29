@@ -21,7 +21,7 @@ struct SearchBarView: View {
                 .overlay(
                     HStack {
                         Spacer()
-                        Image(systemName: search_bar_icon_name)
+                        SystemIcon.search.image
                             .foregroundColor(.gray)
                             .padding(.trailing, 20)
                     }
